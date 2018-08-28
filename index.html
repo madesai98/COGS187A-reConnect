@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <title>reConnect</title>
+</head>
+<body>
+    <div id="intro" class="wrapper">
+        <img src="img/logo black.png" alt="" class="logo">
+        <img src="img/brand-01.png" alt="" class="title">
+        <h3 class="loading">
+            <span>L</span>
+            <span>O</span>
+            <span>A</span>
+            <span>D</span>
+            <span>I</span>
+            <span>N</span>
+            <span>G</span>
+        </h3>
+        <span class="copyright">Woo! © 2018 <br> All Rights Reserved</span>
+    </div>
+
+    <div id="login" class="wrapper">
+        <img src="img/brand-01.png" alt="" class="title">
+        <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input class="input" type="text" placeholder="Username" />
+        </div>
+        <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input class="input" type="password" placeholder="Password" />
+        </div>
+        <button class="button" onclick="moveToScreen('home')">Login</button>
+    </div>
+
+    <div id="home" class="wrapper">
+        <img src="img/Artboard 1.png" alt="" style="width: 100%">
+        <button class="edit-button" onclick="moveToScreen('edit')"></button>
+        <button class="add-photo-button" onclick="moveToScreen('add-photo')"></button>
+        <div class="footer">
+            <button onclick="moveToScreen('community')"><i class="fas fa-users"></i></button>
+            <button><i class="fas fa-home"></i></button>
+            <button onclick="moveToScreen('scan')"><i class="fas fa-camera"></i></button>
+            <button onclick="moveToScreen('messages')"><i class="fas fa-comments"></i></button>
+        </div>
+    </div>
+
+    <div id="edit" class="wrapper">
+        <div class="input-group" style="margin-top: 30px">
+            <input class="input" type="text" placeholder="WIP (Planning details)" />
+        </div>
+        <div class="input-group">
+            <input class="input" type="text" placeholder="WIP (Planning details)" />
+        </div>
+        <div class="input-group">
+            <input class="input" type="text" placeholder="WIP (Planning details)" />
+        </div>
+        <div class="input-group">
+            <input class="input" type="text" placeholder="WIP (Planning details)" />
+        </div>
+        <div class="input-group">
+            <input class="input" type="text" placeholder="WIP (Planning details)" />
+        </div>
+        <div class="input-group">
+            <input class="input" type="text" placeholder="WIP (Planning details)" />
+        </div>
+        <div class="footer">
+            <button onclick="moveToScreen('community')"><i class="fas fa-users"></i></button>
+            <button onclick="moveToScreen('home')"><i class="fas fa-home"></i></button>
+            <button onclick="moveToScreen('scan')"><i class="fas fa-camera"></i></button>
+            <button onclick="moveToScreen('messages')"><i class="fas fa-comments"></i></button>
+        </div>
+    </div>
+
+    <div id="add-photo" class="wrapper">
+        <h3>Camera will go here. Not implemented yet.</h3>
+        <div class="footer">
+            <button onclick="moveToScreen('community')"><i class="fas fa-users"></i></button>
+            <button onclick="moveToScreen('home')"><i class="fas fa-home"></i></button>
+            <button onclick="moveToScreen('scan')"><i class="fas fa-camera"></i></button>
+            <button onclick="moveToScreen('messages')"><i class="fas fa-comments"></i></button>
+        </div>
+    </div>
+
+    <div id="community" class="wrapper">
+            <img src="img/Artboard 1 copy.png" alt="" style="width: 100%">
+        <div class="footer">
+            <button><i class="fas fa-users"></i></button>
+            <button onclick="moveToScreen('home')"><i class="fas fa-home"></i></button>
+            <button onclick="moveToScreen('scan')"><i class="fas fa-camera"></i></button>
+            <button onclick="moveToScreen('messages')"><i class="fas fa-comments"></i></button>
+        </div>
+    </div>
+
+    <div id="scan" class="wrapper">
+        <h3>Camera will go here. Not implemented yet.</h3>
+        <div class="footer">
+            <button onclick="moveToScreen('community')"><i class="fas fa-users"></i></button>
+            <button onclick="moveToScreen('home')"><i class="fas fa-home"></i></button>
+            <button><i class="fas fa-camera"></i></button>
+            <button onclick="moveToScreen('messages')"><i class="fas fa-comments"></i></button>
+        </div>
+    </div>
+
+    <div id="results" class="wrapper">
+        <img src="img/Artboard 1.png" alt="" class="home-temp">
+        <div class="footer">
+            <button onclick="moveToScreen('community')"><i class="fas fa-users"></i></button>
+            <button onclick="moveToScreen('home')"><i class="fas fa-home"></i></button>
+            <button onclick="moveToScreen('scan')"><i class="fas fa-camera"></i></button>
+            <button onclick="moveToScreen('messages')"><i class="fas fa-comments"></i></button>
+        </div>
+    </div>
+
+    <div id="messages" class="wrapper">
+        <h3 class="message-name">Amy Ninja Moneybags</h3>
+        <div class="message-holder"><span class="message">Test message</span></div>
+        <div class="message-holder"><span class="message">You can't send messages yet because because literally everything in this prototype is hard-coded</span></div>
+        <div class="input-group message-send">
+                <input class="input" type="text" placeholder="Text Message" />
+                <i class="fas fa-arrow-right"></i>
+            </div>
+        <div class="footer">
+            <button onclick="moveToScreen('community')"><i class="fas fa-users"></i></button>
+            <button onclick="moveToScreen('home')"><i class="fas fa-home"></i></button>
+            <button onclick="moveToScreen('scan')"><i class="fas fa-camera"></i></button>
+            <button><i class="fas fa-comments"></i></button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+        var currentScreen = "intro";
+
+        $(document).ready(function() {
+            $('.wrapper').hide();
+            $('#intro').show();
+            setTimeout(function() {
+                moveToScreen("login");
+           }, 2000);
+        });
+
+        function moveToScreen(screen) {
+            $('#' + currentScreen).slideUp();
+            $('#' + screen).show();
+            currentScreen = screen;
+        }
+    </script>
+</body>
+</html>
