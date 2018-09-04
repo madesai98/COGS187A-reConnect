@@ -1,170 +1,94 @@
-html, body, .wrapper {
-    width: 100%;
-    height: 100%;
-    margin:  0;
-    padding: 0;
-    background: #2c3e50;
-    color: #fff;
-    font: 16px Arial, sans-serif;
+html, body {
+    width:  100%;
+    height:  100%;
+    margin: 0;
+    padding:  0;
     overflow: hidden;
+    font-family: sans-serif;
 }
 
 .wrapper {
     display: flex;
-    align-items:  center;
-    flex-direction: column;
+    position: absolute;
+    width:  700vw;
+    height:  100vh;
+    margin: 0;
+    padding:  0;
+    left: 0;
+    transition: all 0.6s cubic-bezier(.87,-.41,.19,1.44)
 }
 
-.logo {
-    height: 45%;
-    margin-top: 10%;
-}
-
-.title {
-    width: 70%;
-    margin-top: -10%;
-}
-
-#login .title {
-    margin: 15% 0;
-}
-
-.loading {
-    position:  absolute;
-    bottom: 50px;
-}
-
-.loading span {
-    margin: 0 10px;
-}
-
-.copyright {
-    position:  absolute;
-    font-size: 0.8rem;
-    font-style: italic;
-    color: #34495e;
-    text-align: center;
-    bottom: 25px;
-}
-
-.input-group {
-    display: table;
-    margin: 15px 0;
-    width: 75%;
-}
-
-.input {
-    background: #34495e;
-    border: 0;
-    padding: 10px;
-    font-size: 1rem;
-    color: #ffffff;
-    display: table-cell;
+.nav {
+    position: absolute;
+    bottom: 0;
     width: 100%;
+}
+
+.question-page {
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
     box-sizing: border-box;
 }
 
-::placeholder {
-    color: #ffffff;
-    opacity: 1;
+.question {
+    font-size: 3rem;
 }
 
-:-ms-input-placeholder {
-    color: #ffffff;
-}
-
-::-ms-input-placeholder {
-    color: #ffffff;
-}
-
-.input-group i {
-    margin-right: 15px;
-    font-size: 1.9rem;
-    vertical-align: middle;
-    color: #34495e;
-    display: table-cell;
-    width: 40px;
-}
-
-.button {
-    background: #3480dd;
-    padding: 15px;
-    border: 0;
-    color: #fff;
-    font-size:  1rem;
-    width: 75%;
-    margin-top: 15px;
-}
-
-.footer {
-    position: absolute;
-    bottom: 0px;
-    background: #34495e;
-    width: 100%;
-    text-align: center;
-}
-
-.footer button {
-    background: none;
-    border: 0;
-    font-size: 2.5rem;
-    padding: 20px;
-    color: #fff;
-}
-
-.edit-button {
-    position:  absolute;
-    width: 20%;
-    left: 7%;
-    height: 85px;
-    top: 13%;
-    background:  none;
-    border: 0;
-}
-
-.add-photo-button {
-    position: absolute;
-    width: 20%;
-    right: 12%;
-    height: 136px;
-    top: 27%;
-    background: none;
-    border: 0;
-}
-
-.message-name {
-    width: 100%;
-    padding-left: 60px;
-    padding-top: 7px;
-    padding-bottom: 20px;
-    text-transform:  uppercase;
-    border-bottom: 1px solid #34495e;
-}
-
-.message {
-    background: #3480dd;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 10px;
-    display: inline-block;
-    max-width: 70%;
-    float: right;
-}
-
-.message-holder {
-    width: 100%;
+input {
     display: block;
+    width: 88%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    border-radius: 50px;
+    box-sizing:  border-box;
+    margin-bottom: 15px;
+    outline: 0;
 }
 
-.message-send {
-    width: 92%;
-    position: absolute;
-    bottom: 90px;
-    border-top: 1px solid #34495e;
-    padding-top: 18px;
+input[type=file] {
+    display: none;
 }
 
-.message-send i {
-    color: #3480dd;
-    text-align: right;
+.file-upload {
+    width: 165px;
+    padding: 15px;
+    font-size: 1.5rem;
+    background: #26b9ff;
+    color: white;
+    border: 0;
+    cursor:  pointer;
+}
+
+button {
+    width: 165px;
+    padding: 15px;
+    font-size: 1.5rem;
+    background: #26b9ff;
+    color: white;
+    border: 0;
+    cursor:  pointer;
+}
+
+.nav button {
+    position:  absolute;
+    bottom: 30px;
+}
+
+button#prev {
+    left: 30px;
+}
+
+button#next {
+    right: 30px;
+}
+
+.skip-notification {
+    font-style: italic;
+    font-size: 1rem;
+    color: #aaa;
 }

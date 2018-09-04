@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <title>reConnect | Find</title>
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <div id="0" class="question-page">
+            <h3 class="question">What is their name?</h3>
+
+            <div class="response">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+            </div>
+        </div>
+
+        <div id="1" class="question-page">
+            <h3 class="question">Where did you meet your friend?</h3>
+
+            <div class="response">
+                <input class="location" type="text" placeholder="Select a Location">
+            </div>
+        </div>
+
+        <div id="2" class="question-page">
+            <h3 class="question">When did you meet your friend?</h3>
+
+            <div class="response">
+                <input type="date">
+            </div>
+        </div>
+
+        <div id="3" class="question-page">
+            <h3 class="question">What is their birthday?</h3>
+
+            <div class="response">
+                <input type="date">
+            </div>
+        </div>
+
+        <div id="4" class="question-page">
+            <h3 class="question">Were you in the military together?</h3>
+
+            <div class="response">
+                <input type="text" placeholder="Branch">
+                <input type="text" placeholder="Division">
+            </div>
+
+            <p class="skip-notification">
+                Or press next to continue if you weren't  
+            </p>
+        </div>
+
+        <div id="5" class="question-page">
+            <h3 class="question">Do you have an old picture of them?</h3>
+
+            <div class="response">
+                <label for="profile-upload" class="file-upload">Upload an Image</label>
+                <input id="profile-upload" type="file" accept="image/*" capture="user">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="nav">
+        <button id="prev">Previous</button>
+        <button id="next">Next</button>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&language=en&key=AIzaSyBuq3DzImFYenJwvQKjw_xsDYJvmEDOzog"></script>
+    <script src="main.js"></script>
+</body>
+</html>
